@@ -1,21 +1,22 @@
 :root {
-    --background-color: grey;
+    --background-color: rgb(67, 64, 64);
     --crazy-color: fuchsia; 
     --light-color: #c1baba; 
+    --crazy-selector-color: rgb(28, 151, 151); 
+    --tablet: 650px;
+    --desktop: 1100px;
 }
-
-
-
-
-
-
 
 * {
     box-sizing: border-box;
     border: solid 1px red;
-    background-color: #69667e;
+
+}
+body {
+    background: var(--background-color);
 }
 
+h1
 
 header {
     text-align: center;
@@ -24,11 +25,40 @@ header {
     
 .snippet-card {
     padding: 0 10px 10px 10px;
+    margin: 20px 0;
+    border: dashed var(--light-color);
+    background-color: var(--background-color);
 }
 .snippet-header {
     position: relative;
-    margin: 20px 0;
+    top: -36px;
+    border: solid var(--light-color) 2px;
 }
+.snippet-discription{
+    margin-top: -36px;
+    color: var(--crazy-color);
+}
+
+.snippet-card:hover {
+    box-shadow: 0 0 20px var(--crazy-color);
+
+}
+
+@media screen and (min-width: var(--tablet)) {
+    .snippet-card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .snippet-card {
+        max-width: 400px;
+        margin: 5px;
+        background: blue;
+    }
+
+}
+    
+
+
 
 
  
