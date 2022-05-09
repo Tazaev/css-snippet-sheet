@@ -1,21 +1,50 @@
 :root {
-    background-color:rgb(65, 61, 75)
-
-    
-    
+    --background-color: grey;
+    --crazy-color: fuchsia; 
+    --light-color: #c1baba; 
 }
-div {
-    width: 320px;
-    height: 200px;
-    padding: 10px;
-    border: 5px solid gray;
-    margin: 0;
-    border-style: dashed;
-  }
 
-  h2{
-      border: 3px solid;
-  }
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    border: solid 1px red;
+    background-color: #69667e;
+}
+
+
+header {
+    text-align: center;
+    padding: 10px; 
+}
+    
+.snippet-card {
+    padding: 0 10px 10px 10px;
+}
+.snippet-header {
+    position: relative;
+    margin: 20px 0;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .glow {
     font-size: 80px;
